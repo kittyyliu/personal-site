@@ -9,22 +9,22 @@
 
 /* CSS */
 .navbar {
-  background-color: #333; /* Set background color */
+  background-color: rgb(66, 66, 66); /* Set background color */
   color: #fff; /* Set text color */
   display: flex;
   justify-content: space-between; /* Space out the elements */
   align-items: center;
-  padding: 10px 20px; /* Add some padding for spacing */
+  padding: 20px 20px; /* Add some padding for spacing */
 }
 
 .navbar h1 {
-  font-size: 24px; /* Adjust font size */
+  font-size: 20px; /* Adjust font size */
   margin: 0;
 }
 
 .navbar .links {
   display: flex;
-  gap: 20px; /* Add spacing between links */
+  gap: 30px; /* Add spacing between links */
 }
 
 .navbar a {
@@ -38,6 +38,11 @@
   color: #678E6B; /* Change link color on hover */
 }
 
+.navbar a.active {
+  text-decoration: underline;
+  color: #839f86;
+}
+
 .content {
   max-width: 600px;
   margin: 20px auto; /* Adjusted margin for better centering */
@@ -45,10 +50,20 @@
 }
 
 /* Add these styles to your CSS file */
+/* Adjust the styles for .Home to center its content */
 .Home {
   background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the component fills the entire viewport height */
+}
+
+h1{
+  text-shadow: 0px 3.5px 3.5px rgba(0, 0, 0, 0.43);
 }
 
 .home-title {
@@ -61,4 +76,27 @@
   color: #666;
   margin-top: 20px;
 }
+
+/* Default styles for .pink-text */
+.pink-text {
+  color: #B58484;
+  font-weight: 400;
+  line-height: normal;
+  transition: text-shadow 0.3s; /* Add a smooth transition for the text shadow */
+}
+
+.kitty {
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400; 
+  font-size: 20px; 
+  line-height: 1.5;
+  color: #333; /* Set the text color */
+  text-align: justify; /* Align the text to the left */
+  margin: 0; /* Remove default margins */
+}
+
 
