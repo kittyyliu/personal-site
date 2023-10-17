@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar";
 import Home from "./components/home/home";
+import Kitty from "./components/home/kitty";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="content">
+      <Kitty/>
+      <div className="content with-shadow" style={{ marginTop: '50px' }}>
         <Home />
       </div>
     </div>
@@ -14,3 +15,4 @@ function App() {
 }
 
 export default App;
+
