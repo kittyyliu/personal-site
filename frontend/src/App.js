@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Kitty/>
-      <div className="content with-shadow" style={{ marginTop: '50px' }}>
+      <div className="contentwithshadow" style={{ marginTop: '50px' }}>
         <Home />
       </div>
     </div>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
 
+
 /* base styles */
 * {
   margin: 0; /* Corrected margin value to 0 */
@@ -36,7 +37,7 @@
 }
 
 .navbar a:hover {
-  color: #678E6B; /* Change link color on hover */
+  color: #d0aaaa; /* Change link color on hover */
 }
 
 .navbar a.active {
@@ -62,6 +63,11 @@
   justify-content: center;
   align-items: center;
   max-height: 700px;
+  border-radius: 10px;
+}
+
+.App {
+  border-radius: 10px;
 }
 
 h1{
@@ -83,6 +89,7 @@ h1{
 .kliu h1 {
   color:#666;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 40px;
 }
 
 @keyframes typing {
@@ -131,7 +138,18 @@ h2 {
 
 .with-shadow {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  
 }
+
+
+.contentwithshadow {
+  border-radius: 10px; /* Adjust the value to control the corner radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for a shadow effect */
+  padding: 20px; /* Optional padding for spacing inside the div */
+  background-color: #fff; /* Optional background color */
+}
+
 
 .backdrop{
   color:#333

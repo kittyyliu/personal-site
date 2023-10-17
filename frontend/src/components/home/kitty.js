@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Kliu = () => {
   const [text, setText] = useState('');
-  const fullText = 'kitty liu';
+  const fullText = 'HI, I\'M KITTY LIU!';
 
   useEffect(() => {
     let currentIndex = 0;
