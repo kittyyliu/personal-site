@@ -155,44 +155,50 @@ h2 {
 }
 
 .about-container {
-  width: 50%; /* Adjust the maximum width */
+  width: 800px; /* Adjust the maximum width */
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px; /* Add some padding */
 }
 
 .about-text {
   font-family: 'Outfit';
-  font-size: 35px; 
-  color: #666; 
-  text-align: justify;
-  margin: 0; 
-  padding: 10px; 
+  font-size: 60px;
+  color: #666;
+  text-align: left;
+  margin: 0;
+  flex: 1;
+  padding-left: 40px;
 }
 
 .about-me {
   font-family: 'Outfit';
-  font-size: 18px; 
-  color: #666; 
-  text-align: justify; 
-  margin: 0; 
-  padding: 10px; 
+  font-size: 18px;
+  color: #666;
+  text-align: justify;
+  margin: 0;
+  padding: 10px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
 }
 
 .typewriter-text {
   display: inline;
+  font-size: 60px;
   background: linear-gradient(to right, #d0aaaa, #859e87);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-
 .cursor {
   display: inline-block;
-  width: 8px; 
-  height: 16px; 
+  width: 8px;
+  height: 16px;
   background-color: #859e87;
-  margin-left: 4px; 
+  margin-left: 4px;
   animation: blink 0.4s infinite;
 }
 
@@ -205,6 +211,25 @@ h2 {
   }
 }
 
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .about-container {
+    width: 90%; /* Adjust the width for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .about-text {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    padding-left: 20px; /* Adjust left padding for smaller screens */
+  }
+
+  .about-me {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
+
+
 .footer {
   text-align: center;
   padding: 10px;
@@ -212,7 +237,7 @@ h2 {
 
 .footer p {
   text-align: center;
-  padding: 10px;
+  padding: 50px;
   color: #666;
   font-size: 16px;
 }

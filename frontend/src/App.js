@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Kitty />
       <div className="contentwithshadow" style={{ marginTop: '50px', marginBottom: '80px' }}>
         <Home />
       </div>
