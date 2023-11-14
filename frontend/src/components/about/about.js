@@ -8,7 +8,7 @@ const About = () => {
     'problem-solver.',
     'lifelong learner.',
     'cat-lover.',
-    'bronze Valorant gamer.'
+    'bronze in Valorant.'
   ];
 
   const [index, setIndex] = useState(0);
@@ -48,7 +48,9 @@ const About = () => {
             }}
           />
         <p className="about-text">
-          I'm a <span className="typewriter-text">{displayedText}</span>
+          I'm a 
+          <br />
+          <span className="typewriter-text">{displayedText}</span>
           {showCursor && <span className="cursor">_</span>}
         </p>
       </div>
