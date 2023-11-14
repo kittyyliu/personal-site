@@ -39,9 +39,9 @@ return (
           Resume
         </a>
         <a
-          href="/art"
-          className={activeLink === 'art' ? 'active' : ''}
-          onClick={() => handleLinkClick('art')}
+          href="/fun"
+          className={activeLink === 'fun' ? 'active' : ''}
+          onClick={() => handleLinkClick('fun')}
         >
           Fun
         </a>

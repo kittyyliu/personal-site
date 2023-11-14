@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-const Kliu = () => {
+const Kitty = () => {
   const [text, setText] = useState('');
-  const fullText = 'HI, I\'M KITTY LIU!';
+  const fullText = 'Welcome! Happy you\'re here :)';
 
   useEffect(() => {
     let currentIndex = 0;
@@ -35,4 +35,4 @@ const Kliu = () => {
   );
 };
 
-export default Kliu;
+export default Kitty;

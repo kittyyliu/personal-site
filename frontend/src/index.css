@@ -10,7 +10,7 @@
 
 /* CSS */
 .navbar {
-  background-color: rgb(94, 94, 94); /* Set background color */
+  background-color: #666; /* Set background color */
   color: #fff; /* Set text color */
   display: flex;
   justify-content: space-between; /* Space out the elements */
@@ -26,7 +26,7 @@
 
 .navbar .links {
   display: flex;
-  gap: 30px; /* Add spacing between links */
+  gap: 40px; /* Add spacing between links */
 }
 
 .navbar a {
@@ -37,12 +37,12 @@
 }
 
 .navbar a:hover {
-  color: #d0aaaa; /* Change link color on hover */
+  color: #d3c2c2; /* Change link color on hover */
 }
 
 .navbar a.active {
   text-decoration: underline;
-  color: #839f86;
+  color: #93a094;
 }
 
 .content {
@@ -83,13 +83,14 @@ h1{
   align-items: center;
   text-align: center;
   margin-top: 50px;
-  color:#333;
+  color:#666;
 }
 
 .kliu h1 {
   color:#666;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   font-size: 40px;
+  
 }
 
 @keyframes typing {
@@ -142,14 +143,79 @@ h2 {
   
 }
 
-
 .contentwithshadow {
-  border-radius: 10px; /* Adjust the value to control the corner radius */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for a shadow effect */
-  padding: 20px; /* Optional padding for spacing inside the div */
-  background-color: #fff; /* Optional background color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: linear-gradient(to right, #d0aaaa, #859e87);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
+.about-container {
+  width: 50%; /* Adjust the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding */
+}
+
+.about-text {
+  font-family: 'Outfit';
+  font-size: 35px; 
+  color: #666; 
+  text-align: justify;
+  margin: 0; 
+  padding: 10px; 
+}
+
+.about-me {
+  font-family: 'Outfit';
+  font-size: 18px; 
+  color: #666; 
+  text-align: justify; 
+  margin: 0; 
+  padding: 10px; 
+}
+
+.typewriter-text {
+  display: inline;
+  background: linear-gradient(to right, #d0aaaa, #859e87);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 8px; 
+  height: 16px; 
+  background-color: #859e87;
+  margin-left: 4px; 
+  animation: blink 0.4s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer p {
+  text-align: center;
+  padding: 10px;
+  color: #666;
+  font-size: 16px;
+}
 
 .backdrop{
   color:#333
