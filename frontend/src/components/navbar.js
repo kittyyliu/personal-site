@@ -15,21 +15,14 @@ return (
           className={activeLink === 'home' ? 'active' : ''}
           onClick={() => handleLinkClick('home')}
         >
-          Home
-        </a>
-        <a
-          href="/about"
-          className={activeLink === 'about' ? 'active' : ''}
-          onClick={() => handleLinkClick('about')}
-        >
-          About
+          Me
         </a>
         <a
           href="/projects"
-          className={activeLink === 'projects' ? 'active' : ''}
-          onClick={() => handleLinkClick('projects')}
+          className={activeLink === 'portfolio' ? 'active' : ''}
+          onClick={() => handleLinkClick('portfolio')}
         >
-          Projects
+          Portfolio
         </a>
         <a
           href="/resume"

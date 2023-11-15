@@ -1,43 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
 
 
-/* base styles */
 * {
-  margin: 0; /* Corrected margin value to 0 */
+  margin: 0; 
   font-family: 'Outfit', sans-serif;
   color: #859e87;
 }
 
 /* CSS */
 .navbar {
-  background-color: #666; /* Set background color */
-  color: #fff; /* Set text color */
+  background-color: #666; 
+  color: #fff; 
   display: flex;
-  justify-content: space-between; /* Space out the elements */
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 20px; /* Add some padding for spacing */
+  padding: 20px 20px; 
 }
 
 .navbar h1 {
-  font-size: 20px; /* Adjust font size */
+  font-size: 20px; 
   margin: 0;
   color: #d0aaaa;
 }
 
 .navbar .links {
   display: flex;
-  gap: 40px; /* Add spacing between links */
+  gap: 40px; 
 }
 
 .navbar a {
   text-decoration: none;
-  color: #fff; /* Set link color */
-  transition: color 0.3s; /* Smooth color transition on hover */
+  color: #fff;
+  transition: color 0.3s;
 
 }
 
 .navbar a:hover {
-  color: #d3c2c2; /* Change link color on hover */
+  color: #d3c2c2;
 }
 
 .navbar a.active {
@@ -48,12 +47,10 @@
 .content {
   max-width: 700px;
   max-height: 700px;
-  margin: 20px auto; /* Adjusted margin for better centering */
+  margin: 20px auto;
   padding: 20px;
 }
 
-/* Add these styles to your CSS file */
-/* Adjust the styles for .Home to center its content */
 .Home {
   background-color: #f0f0f0;
   padding: 20px;
@@ -95,7 +92,7 @@ h1{
 
 @keyframes typing {
   to {
-    border-right: 2px solid #000; /* Customize the cursor color */
+    border-right: 2px solid #000; 
   }
 }
 
@@ -109,12 +106,12 @@ h1{
   color: #666;
   margin-top: 20px;
 }
-/* Default styles for .pink-text */
+
 .pink-text {
   color: #d0aaaa;
   font-weight: 400;
   line-height: normal;
-  transition: text-shadow 0.3s; /* Add a smooth transition for the text shadow */
+  transition: text-shadow 0.3s; 
 }
 
 .kitty {
@@ -132,9 +129,9 @@ h2 {
   font-weight: 400; 
   font-size: 18px; 
   line-height: 1.5;
-  color: #333; /* Set the text color */
-  text-align: justify; /* Align the text to the left */
-  margin: 0; /* Remove default margins */
+  color: #333; 
+  text-align: justify; 
+  margin: 0; 
 }
 
 .with-shadow {
@@ -145,19 +142,26 @@ h2 {
 
 .contentwithshadow {
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
   background: linear-gradient(to right, #d0aaaa, #859e87);
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  transition: outline-offset 0.3s ease, outline-color 0.3s ease; /* Add transition for smooth effect */
+  outline: 2px solid transparent; /* Set initial outline to be transparent */
+}
+
+.contentwithshadow:hover {
+  outline-offset: 10px; /* Adjust the outline offset on hover */
+  outline-color: #666; /* Change the outline color on hover */
 }
 
 .about-container {
-  width: 800px; /* Adjust the maximum width */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add some padding */
+  width: 900px; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
 .about-text {
@@ -181,8 +185,13 @@ h2 {
 
 .about-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
+
+.aboutPic:hover {
+  box-shadow: 0 0 10px rgb(197, 137, 137);
+}
+
 
 .typewriter-text {
   display: inline;
@@ -212,21 +221,72 @@ h2 {
   }
 }
 
-/* Responsive Styles */
+.container {
+  display: flex;
+  gap: 20px; 
+}
+
+.current {
+  flex: 1; 
+  padding: 30px; 
+  border: 5px solid #d0aaaa; 
+  border-radius: 20px; 
+  color: #666; 
+}
+
+.past {
+  flex: 1; 
+  padding: 30px; 
+  border: 5px solid #859e87; 
+  border-radius: 20px; 
+  color: #666; 
+}
+
+.current:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.past:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.list1, .list2 {
+  list-style-type: none;
+  padding: 0;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.item11, .item12, .item21, .item22, .item23 {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.list1 li::before {
+  content: '👩‍💻'; 
+  margin-right: 10px; 
+}
+
+.list2 li::before {
+  content: '🎵'; 
+  margin-right: 10px; 
+}
+
+
 @media (max-width: 600px) {
   .about-container {
-    width: 90%; /* Adjust the width for smaller screens */
-    padding: 10px; /* Reduce padding for smaller screens */
+    width: 90%; 
+    padding: 10px;
   }
 
   .about-text {
-    font-size: 40px; /* Adjust font size for smaller screens */
-    padding-left: 20px; /* Adjust left padding for smaller screens */
+    font-size: 40px; 
+    padding-left: 20px;
   }
 
   .about-me {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    padding: 5px; /* Adjust padding for smaller screens */
+    font-size: 16px; 
+    padding: 5px;
   }
 }
 
