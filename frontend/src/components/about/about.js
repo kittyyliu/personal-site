@@ -78,7 +78,7 @@ const About = () => {
         <ol className='list1'>
         <li className='item11'>Am working as a Product Management Intern at Signify</li>
         <li className='item11'>Was selected as one of 150 Canadians to receive a $8000 scholarship to participate in the Diverse Tech Talent Program in Product Management</li>
-        <li className='item11'>Organized 3 of Western Canada's largest hackathons with over 1000 hackers</li>
+        <li className='item11'>Organized 3 of Western Canada's largest hackathons with over 2000 hackers</li>
         </ol>
         <br/>
         <br/>
@@ -89,8 +89,8 @@ const About = () => {
         <br/>
         <ol className='list2'>
         <li className='item11'>Was a competitive classical pianist and performed at Carnegie Hall</li>
-        <li className='item11'>Started and led a music non-profit with world-class musicians, growing to over 100 members and holding over a dozen concerts</li>
-        <li className='item11'>Slept for 23 hours straight</li>
+        <li className='item11'>Taught piano for 8 years, with several students winning 1st place prizes at music festivals!</li>
+        <li className='item11'>Slept for 23 hours straight once</li>
         </ol>
       </div>
       </div>
