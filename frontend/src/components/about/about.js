@@ -49,12 +49,12 @@ const About = () => {
             }}
           />
           </a>
-        <p className="about-text">
-          I'm a 
-          <br />
-          <span className="typewriter-text">{displayedText}</span>
-          {showCursor && <span className="cursor">_</span>}
-        </p>
+          <p className="about-text">
+        I'm a
+        <br />
+        <span className="typewriter-text">{displayedText}</span>
+        {showCursor && <span className="cursor">_</span>}
+      </p>
       </div>
       <br />
       <p className="about-me">
