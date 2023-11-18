@@ -144,18 +144,29 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  background: linear-gradient(to right, #d0aaaa, #859e87);
+  background: radial-gradient(circle, #d0aaaa, #859e87);
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  transition: outline-offset 0.3s ease, outline-color 0.3s ease; /* Add transition for smooth effect */
-  outline: 2px solid transparent; /* Set initial outline to be transparent */
+  transition: outline-offset 0.3s ease, outline-color 0.3s ease; 
+  outline: 2px solid transparent; 
+  animation: gradientAnimation 1s linear infinite; /* Adjust the duration as needed */
+  background-size: 200% 200%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
 }
 
 .contentwithshadow:hover {
-  outline-offset: 10px; /* Adjust the outline offset on hover */
-  outline-color: #666; /* Change the outline color on hover */
+  outline-offset: 10px; 
+  outline-color: #666; 
 }
 
 .about-container {
