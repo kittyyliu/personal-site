@@ -1,59 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
 
 
-/* base styles */
 * {
-  margin: 0; /* Corrected margin value to 0 */
+  margin: 0; 
   font-family: 'Outfit', sans-serif;
   color: #859e87;
-}
-
-/* CSS */
-.navbar {
-  background-color: #666; /* Set background color */
-  color: #fff; /* Set text color */
-  display: flex;
-  justify-content: space-between; /* Space out the elements */
-  align-items: center;
-  padding: 20px 20px; /* Add some padding for spacing */
-}
-
-.navbar h1 {
-  font-size: 20px; /* Adjust font size */
-  margin: 0;
-  color: #d0aaaa;
-}
-
-.navbar .links {
-  display: flex;
-  gap: 40px; /* Add spacing between links */
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fff; /* Set link color */
-  transition: color 0.3s; /* Smooth color transition on hover */
-
-}
-
-.navbar a:hover {
-  color: #d3c2c2; /* Change link color on hover */
-}
-
-.navbar a.active {
-  text-decoration: underline;
-  color: #93a094;
 }
 
 .content {
   max-width: 700px;
   max-height: 700px;
-  margin: 20px auto; /* Adjusted margin for better centering */
+  margin: 20px auto;
   padding: 20px;
 }
 
-/* Add these styles to your CSS file */
-/* Adjust the styles for .Home to center its content */
 .Home {
   background-color: #f0f0f0;
   padding: 20px;
@@ -95,7 +55,7 @@ h1{
 
 @keyframes typing {
   to {
-    border-right: 2px solid #000; /* Customize the cursor color */
+    border-right: 2px solid #000; 
   }
 }
 
@@ -109,22 +69,12 @@ h1{
   color: #666;
   margin-top: 20px;
 }
-/* Default styles for .pink-text */
+
 .pink-text {
   color: #d0aaaa;
   font-weight: 400;
   line-height: normal;
-  transition: text-shadow 0.3s; /* Add a smooth transition for the text shadow */
-}
-
-.kitty {
-  text-decoration: underline;
-  color: #666;
-}
-
-.kitty:hover {
-  text-decoration: underline;
-  color: #d0aaaa;
+  transition: text-shadow 0.3s; 
 }
 
 h2 {
@@ -132,9 +82,9 @@ h2 {
   font-weight: 400; 
   font-size: 18px; 
   line-height: 1.5;
-  color: #333; /* Set the text color */
-  text-align: justify; /* Align the text to the left */
-  margin: 0; /* Remove default margins */
+  color: #333; 
+  text-align: justify; 
+  margin: 0; 
 }
 
 .with-shadow {
@@ -145,89 +95,31 @@ h2 {
 
 .contentwithshadow {
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  background: linear-gradient(to right, #d0aaaa, #859e87);
-  width: 50%;
+  background: radial-gradient(circle, #d19191, #7dad81);
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  transition: outline-offset 0.3s ease, outline-color 0.3s ease; 
+  outline: 2px solid transparent; 
+  animation: gradientAnimation 2s linear infinite; /* Adjust the duration as needed */
+  background-size: 200% 200%;
 }
 
-.about-container {
-  width: 800px; /* Adjust the maximum width */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add some padding */
-}
-
-.about-text {
-  font-family: 'Outfit';
-  font-size: 60px;
-  color: #666;
-  text-align: left;
-  margin: 0;
-  flex: 1;
-  padding-left: 40px;
-}
-
-.about-me {
-  font-family: 'Outfit';
-  font-size: 18px;
-  color: #666;
-  text-align: justify;
-  margin: 0;
-  padding: 10px;
-}
-
-.about-content {
-  display: flex;
-  align-items: flex-start;
-}
-
-.typewriter-text {
-  display: inline;
-  font-size: 60px;
-  background: linear-gradient(to right, #d0aaaa, #859e87);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  white-space: nowrap;
-}
-
-.cursor {
-  display: inline-block;
-  width: 8px;
-  height: 16px;
-  background-color: #859e87;
-  margin-left: 4px;
-  animation: blink 0.4s infinite;
-}
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
   }
-  50% {
-    opacity: 0;
+  100% {
+    background-position: 200% 200%;
   }
 }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
-  .about-container {
-    width: 90%; /* Adjust the width for smaller screens */
-    padding: 10px; /* Reduce padding for smaller screens */
-  }
-
-  .about-text {
-    font-size: 40px; /* Adjust font size for smaller screens */
-    padding-left: 20px; /* Adjust left padding for smaller screens */
-  }
-
-  .about-me {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    padding: 5px; /* Adjust padding for smaller screens */
-  }
+.contentwithshadow:hover {
+  outline-offset: 10px; 
+  outline-color: #666; 
 }
 
 
@@ -247,4 +139,37 @@ h2 {
   color:#333
 }
 
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .links {
+    margin-top: 10px; 
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .links a {
+    margin-right: 0; 
+    margin-bottom: 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+  }
+
+  .about-text {
+    font-size: 35px;
+    text-align: left; 
+  }
+
+  .typewriter-text {
+    font-size: 35px;
+    text-align: left;
+
+  }
+}

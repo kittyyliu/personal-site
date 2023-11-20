@@ -1,0 +1,132 @@
+
+.about-container {
+    width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+  
+  .about-text {
+    font-family: 'Outfit';
+    font-size: 60px;
+    color: #666;
+    text-align: left;
+    margin: 0;
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .about-me {
+    font-family: 'Outfit';
+    font-size: 18px;
+    color: #666;
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .aboutPic:hover {
+    box-shadow: 0 0 10px rgb(197, 137, 137);
+  }
+  
+  
+  .typewriter-text {
+    display: inline;
+    font-size: 60px;
+    background: linear-gradient(to right, #d0aaaa, #859e87);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: #859e87;
+    margin-left: 4px;
+    animation: blink 0.4s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .current {
+    flex: 1; 
+    padding: 30px; 
+    border: 5px solid #d0aaaa; 
+    border-radius: 20px; 
+    color: #666; 
+  }
+  
+  .past {
+    flex: 1; 
+    padding: 30px; 
+    border: 5px solid #859e87; 
+    border-radius: 20px; 
+    color: #666; 
+  }
+  
+  .current:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .past:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .list1, .list2 {
+    list-style-type: none;
+    padding: 0;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .item11, .item12, .item21, .item22, .item23 {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .list1 li::before {
+    content: '👩‍💻'; 
+    margin-right: 10px; 
+  }
+  
+  .list2 li::before {
+    content: '🎵'; 
+    margin-right: 10px; 
+  }
+  
+  
+  @media (max-width: 600px) {
+    .about-container {
+      width: 90%; 
+      padding: 10px;
+    }
+  
+    .about-text {
+      font-size: 40px; 
+      padding-left: 20px;
+    }
+  
+    .about-me {
+      font-size: 16px; 
+      padding: 5px;
+    }
+  }

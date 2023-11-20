@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./navbar.css";
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -8,28 +9,23 @@ const Navbar = () => {
 return (
     
     <nav className="navbar">
+      <a href="/">
       <h1>kittyliu.xyz</h1>
+      </a>
       <div className="links">
         <a
           href="/"
           className={activeLink === 'home' ? 'active' : ''}
           onClick={() => handleLinkClick('home')}
         >
-          Home
-        </a>
-        <a
-          href="/about"
-          className={activeLink === 'about' ? 'active' : ''}
-          onClick={() => handleLinkClick('about')}
-        >
-          About
+          Me
         </a>
         <a
           href="/projects"
-          className={activeLink === 'projects' ? 'active' : ''}
-          onClick={() => handleLinkClick('projects')}
+          className={activeLink === 'portfolio' ? 'active' : ''}
+          onClick={() => handleLinkClick('portfolio')}
         >
-          Projects
+          Portfolio
         </a>
         <a
           href="/resume"
