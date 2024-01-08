@@ -7,23 +7,34 @@ const Portfolio = () => {
     const projects = [
       {
         category: 'software',
+        tech: 'SQL, Node.js, React.js, Express.js',
         title: 'Super Smash Bros. Tournament Tracker',
         description: 'Created a web application to manage and track Super Smash Bros. tournaments, allowing users to add tournaments, filter for tournaments based on players, country, wins, or losses, and delete players ',
         link: 'https://github.com/kittyyliu/304project'
       },
       {
         category: 'design',
+        tech: 'Figma, React.js, Axios, Node.js, Express.js, MongoDB, Spotify API',
         title: 'verses (Hack Western 9 Organizer\'s Choice Award)',
         description: 'Description of Project 2 goes here. Provide information about the technologies used and the challenges faced.',
         link: 'https://devpost.com/software/verses'
       },
       {
         category: 'product',
+        tech: '',
         title: 'Freshify',
         description: 'A food expiration tracker designed to become the ultimate guide for fresher, smarter eating',
         link: 'https://efficient-cosmonaut-4cd.notion.site/Freshify-Product-Pack-Write-up-60b43ba68a284aa3910564002b56418b?pvs=4'
       },
-      // Add more projects as needed
+      {
+        category: 'software',
+        tech: 'SQL, Node.js, React.js, Express.js',
+        title: 'Pawndr',
+        description: `Collaborated with a team of 3 other software developers to build an AI-powered full-stack web application in 36 hours, placing in the top 5
+        projects overall, as well as winning 3 other awards of Best Mental Health Hack,
+        Most Creative Use of GitHub, and Organizer's Choice Award`,
+        link: 'https://github.com/kittyyliu/304project'
+      },
     ];
   
     const filteredProjects = projects.filter(project => project.category === selectedCategory);
@@ -43,6 +54,7 @@ const Portfolio = () => {
           {filteredProjects.map((project, index) => (
             <article className="project" key={index}>
               <h2>{project.title}</h2>
+              <p>{project.tech}</p>
               <p>{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
             </article>

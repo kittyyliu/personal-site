@@ -36,7 +36,7 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <div className="about-content">
+      <div className="about-pic">
       <a href="https://www.youtube.com/watch?v=bNoWWf5XhJk&ab_channel=kiiu" target="_blank">
           <img className='aboutPic'
             src={aboutPic}
@@ -50,6 +50,8 @@ const About = () => {
             }}
           />
           </a>
+          </div>
+          <div className="about-content">
           <p className="about-text">
         I'm a
         <br />
@@ -90,7 +92,7 @@ const About = () => {
         <br/>
         <ol className='list2'>
         <li className='item11'>Was a competitive classical pianist and performed at Carnegie Hall</li>
-        <li className='item11'>Taught piano for 8 years, with several students winning 1st place prizes at music festivals!</li>
+        <li className='item11'>Competed in debate tournaments and learned a lot about various niche topics</li>
         <li className='item11'>Slept for 23 hours straight once</li>
         </ol>
       </div>

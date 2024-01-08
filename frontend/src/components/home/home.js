@@ -1,5 +1,5 @@
 import headshot from '../../assets/headshot.jpg';
-
+import "./home.css";
 
 const Home = () => {
   return (

@@ -28,12 +28,13 @@ return (
           Portfolio
         </a>
         <a
-          href="/resume"
-          className={activeLink === 'resume' ? 'active' : ''}
-          onClick={() => handleLinkClick('resume')}
+        href="https://drive.google.com/drive/folders/17GJCbOfVMTblprXDWuV84XhSCvjh8Fts?usp=sharing"
+        className={activeLink === 'resume' ? 'active' : ''}
+        target="_blank"
+        onClick={() => handleLinkClick('resume')}
         >
           Resume
-        </a>
+          </a>
         <a
           href="/fun"
           className={activeLink === 'fun' ? 'active' : ''}

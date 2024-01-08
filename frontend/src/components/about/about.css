@@ -26,11 +26,17 @@
   
   .about-content {
     display: flex;
-    align-items: center;
+    align-items: left;
+    text-align: left;
+    flex: 1;
   }
   
   .aboutPic:hover {
     box-shadow: 0 0 10px rgb(197, 137, 137);
+  }
+
+  .about-pic {
+    flex: 0 0 auto;
   }
   
   
@@ -38,6 +44,7 @@
     display: inline;
     font-size: 60px;
     background: linear-gradient(to right, #d0aaaa, #859e87);
+    text-align: left;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -113,20 +120,33 @@
     margin-right: 10px; 
   }
   
-  
-  @media (max-width: 600px) {
+  @media screen and (max-width: 1024px) {
     .about-container {
-      width: 90%; 
+      width: 80%; 
       padding: 10px;
+      align-items: center;
+      
     }
-  
+
+    .about-pic {
+      display: flex;
+      justify-content: center;  
+      align-items: center;      
+      height: 100%;            
+  }
+
     .about-text {
-      font-size: 40px; 
+      font-size: 50px; 
       padding-left: 20px;
+      align-items: center;
     }
-  
+
     .about-me {
-      font-size: 16px; 
+      font-size: 18px; 
       padding: 5px;
     }
-  }
+
+    .typewriter-text {
+      font-size: 40px;
+    }
+}
