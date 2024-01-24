@@ -35,6 +35,7 @@ const About = () => {
   }, [displayedText, index, phrases]);
 
   return (
+    <div className="about-everything">
     <div className="about-container">
       <div className="about-pic">
       <a href="https://www.youtube.com/watch?v=bNoWWf5XhJk&ab_channel=kiiu" target="_blank">
@@ -59,9 +60,10 @@ const About = () => {
         {showCursor && <span className="cursor">_</span>}
       </p>
       </div>
+      </div>
       <br />
       <p className="about-me">
-        My name is Kitty Liu and I am currently a 3rd year computer science student at the University of British Columbia. 
+        I'm currently a 3rd year computer science student at the University of British Columbia. 
         After wanting to pursue medicine my entire life, I found out I hated biology, and that I really like building stuff and working with people.
         From there, I found my way to tech and haven't looked back. Now, I've attended several hackathons, organized hackathons for 1000+ attendees, hosted software programming workshops,
         am completing a product management internship, and finally learned how to do a cartwheel.
