@@ -130,14 +130,14 @@
 
 @media screen and (max-width: 1024px) {
   .about-container {
-    width: 80%;
+    width: 95%;
     padding: 10px;
     align-items: center;
   }
 
   .about-pic {
-    width: 150px;
-    margin-right: 10px;
+    width: 200px;
+    margin-right: 20px;
   }
 
   .about-text {
