@@ -82,3 +82,17 @@
     text-decoration: wavy;
   }
 
+  .image-container {
+    width: 100%; 
+    padding-bottom: 100%; 
+    overflow: hidden; 
+    position: relative; 
+  }
+  
+  .image-container img {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+  }
