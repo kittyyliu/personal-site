@@ -65,11 +65,10 @@
   }
   
   .project p {
-    color: #666;
     text-justify: auto;
     text-align: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   
   .project a {
@@ -80,6 +79,16 @@
   
   .project a:hover {
     text-decoration: wavy;
+  }
+
+  button.active {
+    background-color: #d0aaaa;
+    color: #fff;
+  }
+  
+  .button:active {
+    background-color: #d0aaaa;
+    color: #fff;
   }
 
   .image-container {
@@ -95,4 +104,19 @@
     position: absolute; 
     top: 0; 
     left: 0;
+  }
+
+  .tech {
+    font-style: italic;
+    color: #969696;
+  }
+
+  .description {
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: left;
   }
